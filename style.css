@@ -10,35 +10,29 @@ a {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 98;
+	z-index: 2;
 
 	/* visual */
 	background-color: #fff;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
-.nav-bar ul {
-	/* Positioning */
-
+.nav-bar-container {
 	/* Box model */
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-
-	/* Typographic */
-
-	/* Visual */
 	height: 40px;
-
-	/* Misc */
 }
 
 .left-nav-bar {
-	/* positioning */
-	margin-left: 20px;
+	/* box model */
+	display: flex;
+	justify-content: space-around;
+	width: 232px;
 }
 
-.section-topic a{
+.section-topic{
 	/* typographic */
 	text-transform: uppercase;
 	font-weight: 700;
@@ -46,19 +40,11 @@ a {
 	font-size: 14.25px;
 }
 
-.middle-nav-bar {
-	/* box model */
-	display: flex;
-	flex-grow: 1;
-	justify-content: center;
+.section-topic:hover {
+	text-decoration: underline;
 }
 
-.right-nav-bar {
-	/* positioning	 */
-	margin-right: 15px;
-}
-
-.right-nav-bar button {
+.button {
 	/* visual */
 	height: 32px;
 	color:white;
@@ -80,10 +66,223 @@ a {
 }
 
 .section {
+	/* box model */
 	display: flex;
 	justify-content: space-evenly;
 }
 
 article {
-	margin-top: 36px;
+	margin-top: 80px;
 }
+
+.article-header {
+	/* positioning */
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+
+
+	/* box model */
+	display: block;
+	max-width: 600px;
+
+	/* typography */
+	font-weight: 700;
+	font-size: 2.5rem;
+	font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+	font-style: italic;
+	line-height: 3rem;
+}
+
+.social-widget {
+	/* positioning */
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	/* box model */
+	display: flex;
+	align-items: center;
+	width: 600px;
+	border-top: 1px solid #ebebeb;	
+}
+
+.social-widget li {
+	/* positioning */
+	margin-right: 20px;
+
+	/* box model */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-widget .social-media-icon {
+	/* box model */
+	width: 30px;
+  	height: 30px;
+
+	/* visual */
+	background-color: #eee;
+	border: 1px #eee solid;
+	border-radius: 100%;
+}
+
+
+.article-figure {
+	/* positioning */
+	margin-left: auto;
+	margin-right: auto;
+
+	/* box model */
+	width: 1200px;
+}
+
+.article-figure-image {
+	width: 100%;
+}
+
+.article-figure-figcaption {
+	/* positioning */
+	margin: 6px 0px 20px;
+
+	/* box model */
+	width: 63%;
+	line-height: 1.25em;	
+
+	/* typographic */
+	color: #666;
+	font-size: 0.875em;
+	font-family: nyt-imperial,georgia,'times new roman',times,serif;
+
+	
+}
+
+.author-and-date {
+	/* positioning */
+	margin-top: 50px;
+	margin-bottom: 30px;
+	/* typographic */
+	font-family: nyt-franklin,helvetica,arial,sans-serif;
+	line-height: 0.5rem;
+
+	/* visual */
+	color: #333333;
+}
+
+.author {
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+
+.date {
+	font-weight: 500;
+	font-size: 0.8rem;
+}
+
+.article-body {
+	/* box model */
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+
+	/* typographic */
+	font-family: nyt-imperial,georgia,'times new roman',times,serif;
+	font-size: 1.25rem;
+	line-height: 1.875rem;
+	
+	/* visual */
+	color: #333;
+}
+
+.article-body p {
+	margin-bottom: 30px;
+}
+
+.article-body-image {
+	/* positioning */
+	margin-left: 50%;
+	margin-bottom: 20px;
+	transform: translateX(-50%);
+	/* box model */
+	display: block;
+}
+
+.theory-of-inflation {
+	width: 945px;
+	height: 700px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+  	grid-template-rows: 140px auto 100px auto;
+}
+
+.theory-of-inflation p {
+	width: 92%;
+	font-size: 14px;
+	font-family: nyt-franklin,arial,helvetica,sans-serif;
+    line-height: 17px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.theory-of-inflation p strong {
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: .05em;
+  }
+
+.theory-of-inflation img {
+	width: 945px;
+	height: 600px;
+	grid-area: 1 / 1 / -1 / -1;
+}
+
+.theory-of-inflation p:first-of-type {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.theory-of-inflation p:nth-of-type(2) {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.theory-of-inflation p:nth-of-type(3) {
+	grid-area: 2 / 3 / 3 / 4;
+}
+
+.theory-of-inflation p:nth-of-type(4) {
+	grid-area: 2 / 4 / 3 / 5;
+}
+
+.theory-of-inflation p:nth-of-type(5) {
+	grid-area: 4 / 1 / 5 / 2;
+}
+
+.theory-of-inflation p:nth-of-type(6) {
+	grid-area: 4 / 2 / 5 / 3;
+}
+
+.theory-of-inflation p:nth-of-type(7) {
+	grid-area: 4 / 3 / 5 / 4;
+}
+
+.theory-of-inflation p:nth-of-type(8) {
+	grid-area: 4 / 4 / 5 / 5;
+}
+
+
+
+/* media query */
+@media screen and (min-width: 1024px) {
+	.nav-bar-container {
+		max-width: 1600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
