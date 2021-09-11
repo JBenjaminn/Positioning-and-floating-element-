@@ -1,0 +1,331 @@
+.main-article-section .social-widget .social-media-icon {
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+}
+
+.main-article-section .social-widget .social-media-icon {
+  border-radius: 50%;
+  background: #dcdada;
+}
+
+nav button, .main-article-section .article-body .body-wrapper .bottom button {
+  background: #557a95;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.main-article-section .header, .main-article-section .social-widget, .main-article-section .main-image-figure .main-image, .main-article-section .main-image-figure figcaption, .main-article-section .article-body section.author-and-date, .main-article-section .article-body section.theory-of-inflation, .main-article-section .article-body .body-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 5px 20px;
+  width: calc(100% - 40px);
+  border-bottom: 1px solid #999;
+  font-size: 16px;
+}
+
+nav div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav div:first-of-type a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.main-article-section .header {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 600px;
+  overflow: hidden;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.main-article-section .social-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-top: 1px solid #999;
+}
+
+.main-article-section .social-widget .social-media-icon-wrapper {
+  margin-right: 20px;
+}
+
+.main-article-section .main-image-figure .main-image {
+  width: 85%;
+  display: block;
+}
+
+.main-article-section .main-image-figure figcaption {
+  width: 85%;
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 10px;
+  line-height: 1.3;
+}
+
+.main-article-section .article-body {
+  padding-top: 40px;
+}
+
+.main-article-section .article-body section.author-and-date {
+  width: 50%;
+  font-size: 17px;
+  font-weight: 200;
+  margin-bottom: 32px;
+}
+
+.main-article-section .article-body section.author-and-date p {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.main-article-section .article-body section.author-and-date p .author {
+  text-decoration: underline;
+}
+
+.main-article-section .article-body section.theory-of-inflation {
+  width: 70%;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.main-article-section .article-body section.theory-of-inflation h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.main-article-section .article-body section.theory-of-inflation p {
+  width: 100%;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper {
+  width: 100%;
+  height: 576px;
+  max-height: 576px;
+  background: url("inflation.png");
+  background-size: 100% 100%;
+  font-size: 13px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 130px auto 130px auto;
+      grid-template-rows: 130px auto 130px auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper p {
+  margin-bottom: 0;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper p#1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper p#2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper p#3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper p#4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper p#5 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper p#6 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper p#7 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper p#8 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 4 / 4 / 5 / 5;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper .div1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper .div2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper .div3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper .div4 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper .div5 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper .div6 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper .div7 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper .div8 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+.main-article-section .article-body section.theory-of-inflation .body-wrapper strong {
+  font-weight: 700;
+}
+
+.main-article-section .article-body .body-wrapper {
+  width: 50%;
+}
+
+.main-article-section .article-body .body-wrapper p {
+  line-height: 1.5;
+  margin-bottom: 23px;
+}
+
+.main-article-section .article-body .body-wrapper h2 {
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.main-article-section .article-body .body-wrapper .youtube-video-wrapper {
+  text-align: center;
+  height: 358px;
+  margin-bottom: 30px;
+}
+
+.main-article-section .article-body .body-wrapper .youtube-video-wrapper .youtube-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main-article-section .article-body .body-wrapper .bottom {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.main-article-section .article-body .body-wrapper .bottom p {
+  width: 100%;
+}
+
+.main-article-section .article-body .body-wrapper .bottom span {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=index.css.map */
